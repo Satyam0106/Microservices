@@ -1,0 +1,18 @@
+FROM node:22-alpine
+
+WORKDIR /app #working directory of docker , like tranfering server.js to docker 
+
+COPY package*.json ./ #* means those file whose name start with packge will go
+
+RUN npm ci #by ci ,download node dependencies from cache and install files  for faster execution
+ 
+COPY .. #copy all remaining files and paste in app directory, firs dot is source and 2nd dot is destination
+
+EXPOSE 3000
+
+CMD ["npm","run","dev"]
+
+
+
+
+

@@ -1,0 +1,15 @@
+Docker Excecute : 
+docker compose  up -d --build
+
+To remove the container
+Docker compose 
+
+If you are working in any industry there will be some env 
+DEV , PROD , 
+
+Dev->Prod 
+docker compose -f docker-compose.yml -f docker-compose.dev.yaml up -d --build
+docker compose -f docker-compose.yml -f docker-compose.dev.yaml up -d
+
+Prod comm
+docker compose -f docker-compose.yml -f docker-compose.prod.yaml up -d --build

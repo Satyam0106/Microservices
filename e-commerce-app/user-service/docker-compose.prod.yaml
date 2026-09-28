@@ -1,0 +1,5 @@
+services:
+  user-service:
+    enviroment :
+      - NODE_ENV = development
+    command: npm run prod 
